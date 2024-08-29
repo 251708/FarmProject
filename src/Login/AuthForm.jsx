@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+/*import React, { useState } from 'react';
 
 
 const AuthForm = ({ onLogin, onSignup }) => {
@@ -59,3 +59,16 @@ const AuthForm = ({ onLogin, onSignup }) => {
 };
 
 export default AuthForm;
+*/
+import React from 'react'
+
+const AuthForm = () => {
+  return (
+    <div>
+      
+    </div>
+  )
+}
+
+export default AuthForm
+

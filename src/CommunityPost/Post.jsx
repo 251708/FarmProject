@@ -1,5 +1,5 @@
 import React from 'react';
-import { database } from './Firebase'
+//import { database } from './Firebase'
 
 const Post = ({ post, postId, showFlashMessage }) => {
   const [showComments, setShowComments] = useState(false);

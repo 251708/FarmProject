@@ -1,7 +1,7 @@
 
 
   import React, { useEffect, useState } from 'react';
-import { database } from './Firebase';
+//import { database } from './Firebase';
 import Post from './Post';
 
 const CommunityFeed = ({ showFlashMessage }) => {

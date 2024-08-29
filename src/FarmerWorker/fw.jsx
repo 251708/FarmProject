@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from './components/Navbar';
 import TextContainer from './components/TextContainer';
 import WorkerList from './components/WorkerList';
-import { initializeFirebase } from './firebase';
+//import { initializeFirebase } from './firebase';
 
 function fw() {
   initializeFirebase();
