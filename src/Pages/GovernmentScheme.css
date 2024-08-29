@@ -1,0 +1,121 @@
+
+
+::-webkit-scrollbar{
+    display: none;
+}
+body{
+    background-color: black;
+    padding: 0;
+    margin: 0;
+}
+h1 ,h2, h3, h4 ,p{
+    color: white;
+}
+.card-out{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+.card {
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    padding: 15px;
+    min-width: 500px;
+    padding: 20px;
+    width: fit-content;
+    max-height: fit-content; /* Fixed height of card */
+    transition: max-height 0.3s ease;
+    box-shadow: 10px 10px 20px rgba(255, 255, 255, 0.1), 
+        -10px -10px 20px rgba(255, 255, 255, 0.1);
+}
+.card h3 {
+    margin-top: 0;
+}
+.card p {
+    margin-bottom: 0;
+}
+.more-content {
+    overflow-y: auto;
+    max-height: fit-content; /* Fixed height of content */
+}
+.read-more {
+    color: rgb(5, 247, 5);
+    cursor: pointer;
+}
+.card1{
+margin-top: 20px;
+}
+.navbar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: black;
+padding: 0;
+box-shadow: 5px 5px 10px #1c1c1c, 
+        -5px -5px 10px #323232;
+}
+
+.logo {
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 15px;
+margin: 0;
+padding: 0;
+font-size: 24px;
+color: #ffffff;
+text-shadow: 2px 2px 4px #000000;
+}
+
+.nav-links {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.nav-links a {
+text-decoration: none;
+color: #ffffff;
+font-size: 18px;
+margin: 0 10px;
+padding: 10px 15px;
+border-radius: 10px;
+background-color: #333333;
+box-shadow: 5px 5px 10px #1c1c1c, 
+        -5px -5px 10px #323232;
+}
+
+.nav-links a:hover {
+background-color: #555555;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    gap: 15px;
+}
+.dropdown-content {
+    
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(2, 2, 2, 0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: rgb(5, 249, 5);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: #dce1da;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}

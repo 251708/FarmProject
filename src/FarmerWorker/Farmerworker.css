@@ -1,0 +1,130 @@
+body{
+background-color: black;
+    font-family: "Roboto Condensed", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+        }
+        .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 0;
+    box-shadow: 5px 5px 10px #1c1c1c, 
+                -5px -5px 10px #323232;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    margin: 0 10px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: #333333;
+    box-shadow: 5px 5px 10px #1c1c1c, 
+                -5px -5px 10px #323232;
+}
+
+.nav-links a:hover {
+    background-color: #555555;
+}
+
+
+.text-container{
+            height: 50vh;
+            width: 100vw;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            
+            align-items: center;
+ }
+ .h1{       color: white;
+            font-size: 60px;
+            font-weight: 1000;
+}
+.para{       color: white;
+            font-size: 25px;
+            font-weight: 400;
+        }
+
+.btn {
+    width: fit-content;
+    padding: 15px;
+    height: 50px;
+    background-color: rgb(50, 160, 50); 
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    }
+
+.btn:hover {
+    background-color: rgb(50, 160, 50); 
+        }
+
+.main-container{
+            padding: 0;
+            margin: 0;
+            width: 100vw;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+.workerlist{
+            width: 100vw;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 50px;
+            padding: 100px;
+            justify-content: center;
+
+        }
+.worker-container {
+            color: white;
+            margin-bottom: 20px;
+            border: 1px solid black;
+            padding: 10px;
+            border-radius: 5px;
+            height: fit-content;
+            width: fit-content;
+            border-radius: 15px;
+            background-color: #333333;
+            box-shadow: 10px 10px 20px rgba(255, 255, 255, 0.2), 
+                -10px -10px 20px rgba(255, 255, 255, 0.2);
+        }
+
+.worker-container p {
+            margin: 5px 0;
+        }
+
+.worker-container.available {
+            border-color: green;
+        }
+
+.worker-container.not-available {
+            border-color: red;
+        }

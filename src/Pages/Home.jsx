@@ -1,55 +1,15 @@
-/*import React from 'react';
 
-const Home = () => {
-  return (
-    <>
-      <div className="card-box">
-        <div className="inner-card-box">
-          <div className="card">
-            <div className="card-image">
-              {/* You can add an image here if needed, like <img src="path/to/image.jpg" alt="description" /> /}
-            </div>
-            <div className="card-content">
-              <h2>CropCare AI</h2>
-              <p>Introducing CropCare AI: Your partner in crop health optimization and management.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="box-text">
-      <div className="text-1">
-        Agriculture
-        <h1 style={{ color: 'white' }}>
-          Enhancing Farming with <span style={{ color: 'rgb(14, 240, 14)' }}>CropCare AI</span>
-        </h1>
-        <p style={{ color: 'white' }}>
-          Quickly identifies crop diseases from uploaded images and suggests remedies.
-          <br />
-          Empowering farmers with actionable solutions,
-          <br />
-          it ensures healthy yields.
-        </p>
-      </div>
-      <a href="http://127.0.0.1:5000">
-        <button className="btn">Click me</button>
-      </a>
-    </div>
-  
-    </>
-  );
-};
-
-export default Home;
-
-*/
 import React from 'react'
 import { Player } from '@lottiefiles/react-lottie-player';
+
+import {Link} from 'react-router-dom';
+import Navbar from '../Component/Navbar';
+
 const Home = () => {
   return (
     <>
      
-    
+    <Navbar />
 
     <div className="card-box">
       <div className="inner-card-box">
@@ -102,9 +62,9 @@ const Home = () => {
             empowering farmers with vital resources. From subsidies to grants,
             it optimizes farming operations for sustainable growth.
           </p>
-          <a href="./governmentscheme.html">
+          <Link to='/GovernmentScheme'>
             <button className="btn">Click me</button>
-          </a>
+            </Link>
         </div>
 
         <div className="card">
@@ -129,52 +89,22 @@ const Home = () => {
       </div>
     </div>
 
+    
+  
+
+       
+
 
     
     
-    <div className="card-box">
-      <div className="inner-card-box">
-        <div className="card">
-          <div className="card-image">
-            <Player 
-              src="https://lottie.host/5337bd7f-f7e7-4f5c-b446-0e3244963e0f/o0BPESNPdi.json"
-              background="transparent" // Use "transparent" instead of "##FFFFFF"
-              speed="1"
-              style={{ width: '300px', height: '300px' }}
-              loop
-              autoplay
-              direction={1}
-              mode="normal"
-            />
-          </div>
-          <div className="card-content">
-            <h2>FarmersFirst Market</h2>
-            <p>Welcome to FarmersFirst Market: Your direct link to selling farm produce and accessing fair prices.</p>
-          </div>
-        </div>
-      </div>
-
-      <div className="box-text">
-        <h1>
-          Grower's Hub: <span style={{ color: 'rgb(14, 240, 14)' }}>FarmersFirst Market</span>
-        </h1>
-        <p>
-          Connects growers directly, eliminating middlemen for fair prices and fresh produce access. <br />
-          Transforming the marketplace, empowering growers and <br />
-          buyers with transparency and efficiency.
-        </p>
-        <a href="./marketPlace.html">
-          <button className="btn">Click me</button>
-        </a>
-      </div>
-    </div>
+    
 
       <div className="card-box">
         <div className="inner-card-box inner-box-2">
           <div className="box-text">
             <h1>Smart Farming Tool: <span style={{ color: 'rgb(14, 240, 14)' }}>Crop Recommendation Tool</span></h1>
             <p>Your Smart Farming Companion. Offering tailored crop advice, profit insights, and subsidy details, empowering informed decisions based on regions for optimal agricultural productivity and profitability.</p>
-            <a href="http://127.0.0.1:5001"><button className="btn">Click me</button></a>
+           <Link to='./Main'><button className="btn">Click me</button></Link>
           </div>
           <div className="card">
             <div className="card-image">
@@ -264,9 +194,9 @@ const Home = () => {
           exchange ideas, troubleshoot challenges, and cultivate <br />
           solutions for a thriving agricultural community
         </p>
-        <a href="./cp.html">
+       <Link to= './CommunityFeed'>
           <button className="btn">Click me</button>
-        </a>
+          </Link>
       </div>
     </div>
 
