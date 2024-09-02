@@ -10,7 +10,7 @@ const Home = () => {
     <>
      
     <Navbar />
-
+    
     <div className="card-box">
       <div className="inner-card-box">
         <div className="card">
@@ -26,13 +26,13 @@ const Home = () => {
               mode="normal"
             />
           </div>
+
           <div className="card-content">
             <h2>CropCare AI</h2>
             <p>Introducing CropCare AI: Your partner in crop health optimization and management.</p>
           </div>
         </div>
       </div>
-
       <div className="box-text">
         <div className="text-1">
           Agriculture
@@ -40,8 +40,77 @@ const Home = () => {
             Enhancing Farming with <span style={{ color: 'rgb(14, 240, 14)' }}>CropCare AI</span>
           </h1>
           <p style={{ color: 'white' }}>
-            Quickly identifies crop diseases from uploaded images and suggests remedies. <br />
-            Empowering farmers with actionable solutions, <br />
+          Quickly identifies crop diseases from uploaded images and suggests remedies. <br />
+          Empowering farmers with actionable solutions, <br/>
+          it ensures healthy yields.
+          </p>
+        </div>
+        <a href="http://127.0.0.1:5000">
+          <button className="btn">Click me</button>
+        </a>
+      </div>
+    </div>
+    
+   
+    <div className="card-box">
+        <div className="inner-card-box inner-box-2">
+          <div className="box-text">
+            <h1>Unlock Opportunities :<span style={{ color: 'rgb(14, 240, 14)' }}>AgricSchemes</span></h1>
+            <p>AgricSchemes Portal streamlines access to government agricultural schemes, <br/>
+                     empowering farmers with vital resources. From subsidies to grants, <br/>
+                     it optimizes farming operations for sustainable growth.</p>
+           <Link to='./GovernmentScheme'><button className="btn">Click me</button></Link>
+          </div>
+          <div className="card">
+            <div className="card-image">
+              <Player
+                src="https://lottie.host/47540543-8849-4fab-94f7-e930f424d7ad/GMj5b2KwrJ.json"
+                background="transparent"
+                speed={1}
+                style={{ width: '300px', height: '300px' }}
+                loop
+                autoplay
+              />
+            </div>
+            <div className="card-content">
+              <h2>AgriSchemes Connect</h2>
+              <p>Explore AgricSchemes: Your gateway to essential government
+              agricultural programs and subsidies.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <div className="card-box">
+      <div className="inner-card-box">
+        <div className="card">
+          <div className="card-image">
+            <Player 
+              src="https://lottie.host/5337bd7f-f7e7-4f5c-b446-0e3244963e0f/o0BPESNPdi.json"
+              background="transparent" // Use "transparent" instead of "##fff"
+              speed="1"
+              style={{ width: '300px', height: '300px' }}
+              loop
+              autoplay
+              direction={1}
+              mode="normal"
+            />
+          </div>
+          <div className="card-content">
+            <h2>FarmersFirst Market</h2>
+            <p>Welcome to FarmersFirst Market: Your direct link to selling farm produce and accessing fair prices.</p>
+          </div>
+        </div>
+      </div>
+      <div className="box-text">
+        <div className="text-1">
+          Agriculture
+          <h1 style={{ color: 'white' }}>
+          Grower's Hub: <span style={{ color: 'rgb(14, 240, 14)' }}>FarmersFirst Market</span>
+          </h1>
+          <p style={{ color: 'white' }}>
+          Connects growers directly, eliminating middlemen for fair prices. <br />
+          and fresh produce access Empowering farmers with actionable solutions, <br />
             it ensures healthy yields.
           </p>
         </div>
@@ -51,52 +120,7 @@ const Home = () => {
       </div>
     </div>
 
-    <div className="card-box">
-      <div className="inner-card-box inner-box-2">
-        <div className="box-text">
-          <h1>
-            Unlock Opportunities with <span style={{ color: 'rgb(14, 240, 14)' }}>AgricSchemes</span>
-          </h1>
-          <p>
-            AgricSchemes Portal streamlines access to government agricultural schemes,
-            empowering farmers with vital resources. From subsidies to grants,
-            it optimizes farming operations for sustainable growth.
-          </p>
-          <Link to='/GovernmentScheme'>
-            <button className="btn">Click me</button>
-            </Link>
-        </div>
-
-        <div className="card">
-          <div className="card-image">
-            <Player
-              src="https://lottie.host/47540543-8849-4fab-94f7-e930f424d7ad/GMj5b2KwrJ.json"
-              background="transparent"
-              speed={1}
-              style={{ width: '300px', height: '300px' }}
-              loop
-              autoplay
-            />
-          </div>
-          <div className="card-content">
-            <h2>AgriSchemes Connect</h2>
-            <p>
-              Explore AgricSchemes: Your gateway to essential government
-              agricultural programs and subsidies.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    
-  
-
-       
-
-
-    
-    
+      
     
 
       <div className="card-box">
@@ -161,7 +185,34 @@ const Home = () => {
         </a>
       </div>
     </div>
-
+    
+    <div className="card-box">
+        <div className="inner-card-box inner-box-2">
+          <div className="box-text">
+            <h1>Smart Farming: <span style={{ color: 'rgb(14, 240, 14)' }}>Kisan Mitra bot</span></h1>
+            <p>Smart Farming: Kisan Mitra Bot" is your agricultural ally, offering quick and precise <br/>
+            answers to all farming questions From crop advice to livestock tips, it's your <br/>
+            go-to for informed decisions and farm success..</p>
+           <Link to='./Main'><button className="btn">Click me</button></Link>
+          </div>
+          <div className="card">
+            <div className="card-image">
+              <Player
+                src="https://lottie.host/81e23d05-1a74-44c2-89f8-b1329dd7244a/EyuGPhV3mO.json"
+                background="transparent"
+                speed={1}
+                style={{ width: '300px', height: '300px' }}
+                loop
+                autoplay
+              />
+            </div>
+            <div className="card-content">
+              <h2>Kisan Mitra</h2>
+              <p>Meet Kisan Mitra: Your smart companion for all farming queries.</p>
+            </div>
+          </div>
+        </div>
+      </div>
 
     <div className="card-box">
       <div className="inner-card-box">
@@ -200,6 +251,8 @@ const Home = () => {
       </div>
     </div>
 
+    
+
       <div className="card-box">
         <div className="inner-card-box inner-box-2">
           <div className="box-text">
@@ -220,7 +273,7 @@ const Home = () => {
             </div>
             <div className="card-content">
               <h2>GreenFarming Toolbox</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p>Farming Toolbox is helpful in improving productivity.</p>
             </div>
           </div>
         </div>
@@ -232,6 +285,6 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Home;
 
 
