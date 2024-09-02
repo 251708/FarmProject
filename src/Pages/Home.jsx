@@ -178,7 +178,7 @@ const Home = () => {
           With location-based matching, it ensures efficient labor sourcing within a specified location. <br />
           Simplify farm management with KhetCrew!
         </p>
-        <Link to='./Fw'><button className="btn">Click me</button></Link>
+        <Link to='./Farmworker'><button className="btn">Click me</button></Link>
      
       </div>
     </div>

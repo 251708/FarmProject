@@ -52,7 +52,7 @@ const App = () => {
 }
 
 
-function Fw() {
+function Farmworker() {
   return (
     <>
     <Navbar />
@@ -61,7 +61,7 @@ function Fw() {
   );
 }
 
-export default Fw;
+export default Farmworker;
 
 
 

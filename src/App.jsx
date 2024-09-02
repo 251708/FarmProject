@@ -9,7 +9,7 @@ import Contact from './Pages/Contact';
 import GovernmentScheme from './Pages/GovernmentScheme';
 import Main from './Login/Main';
 import CommunityFeed from './CommunityPost/CommunityFeed';
-import Fw from './FarmerWorker/Fw';
+import Farmworker from './FarmerWorker/FarmWorker';
 import Mp from './MarketPlace/Mp';
 
 
@@ -28,7 +28,7 @@ function App() {
         <Route path="/governmentscheme" element={<GovernmentScheme />} />
         <Route path="/Main" element={<Main />} />
         <Route path="/CommunityFeed" element={<CommunityFeed />} />
-        <Route path="Fw" element={<Fw />} />
+        <Route path='/Farmworker' element= {<Farmworker />} />
         <Route path='Mp' element={<Mp />} />
       
        
