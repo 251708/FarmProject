@@ -114,9 +114,7 @@ const Home = () => {
             it ensures healthy yields.
           </p>
         </div>
-        <a href="http://127.0.0.1:5000">
-          <button className="btn">Click me</button>
-        </a>
+        <Link to='./Mp'><button className="btn">Click me</button></Link>
       </div>
     </div>
 
@@ -180,7 +178,7 @@ const Home = () => {
           With location-based matching, it ensures efficient labor sourcing within a specified location. <br />
           Simplify farm management with KhetCrew!
         </p>
-        <Link to='./fw'><button className="btn">Click me</button></Link>
+        <Link to='./Fw'><button className="btn">Click me</button></Link>
      
       </div>
     </div>

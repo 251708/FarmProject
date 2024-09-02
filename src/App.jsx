@@ -10,6 +10,7 @@ import GovernmentScheme from './Pages/GovernmentScheme';
 import Main from './Login/Main';
 import CommunityFeed from './CommunityPost/CommunityFeed';
 import Fw from './FarmerWorker/Fw';
+import Mp from './MarketPlace/Mp';
 
 
 
@@ -28,6 +29,8 @@ function App() {
         <Route path="/Main" element={<Main />} />
         <Route path="/CommunityFeed" element={<CommunityFeed />} />
         <Route path="Fw" element={<Fw />} />
+        <Route path='Mp' element={<Mp />} />
+      
        
     
       </Routes>
