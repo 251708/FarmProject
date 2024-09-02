@@ -1,88 +1,97 @@
+import React, { useState } from 'react';
+import './community.css';
+import Nav1 from './Nav1';
+//import 'bootstrap/dist/css/bootstrap.min.css';
+function AddPostForm() {
+  const [username, setUsername] = useState('');
+  const [content, setContent] = useState('');
+  const [image, setImage] = useState(null);
 
-
-  import React, { useEffect, useState } from 'react';
-//import { database } from './Firebase';
-import Post from './Post';
-
-const CommunityFeed = ({ showFlashMessage }) => {
-  const [posts, setPosts] = useState([]);
-
-  useEffect(() => {
-    const postsRef = database.ref('posts').orderByChild('timestamp');
-    postsRef.on('value', (snapshot) => {
-      const data = snapshot.val();
-      if (data) {
-        const postsArray = Object.keys(data).map((key) => ({
-          postId: key,
-          ...data[key],
-        }));
-        setPosts(postsArray.reverse());
-      } else {
-        setPosts([]);
-      }
-    });
-
-    // Cleanup the listener on component unmount
-    return () => postsRef.off();
-  }, []); // Empty dependency array means this effect runs once on mount and cleanup on unmount
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Handle form submission here, e.g., send data to a server
+    console.log('Username:', username);
+    console.log('Content:', content);
+    console.log('Image:', image);
+  };
 
   return (
-    <div>
-      {posts.map((post) => (
-        <Post key={post.postId} post={post} showFlashMessage={showFlashMessage} />
-      ))}
-    </div>
+    <section className="form-cont">
+      <div id="flashMessage"></div>
+      <div className="form-text-cont"></div>
+      <div className="head-1">
+        <h2>Add New <span style={{ color: 'rgb(14, 240, 14)' }}>Post</span></h2>
+      </div>
+      <form id="postForm" className="mb-4 main-form" onSubmit={handleSubmit}>
+        <div className="ip-out">
+          <label htmlFor="username" className="form-label">Username:</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            className="form-control ip"
+            required
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
+          />
+        </div>
+        <div className="ip-out">
+          <label htmlFor="content" className="form-label">Post Content:</label>
+          <textarea
+            id="content"
+            name="content"
+            className="form-control"
+            required
+            value={content}
+            onChange={(e) => setContent(e.target.value)}
+          ></textarea>
+        </div>
+        <div className="ip-out">
+          <label htmlFor="image" className="form-label">Upload Image:</label>
+          <input
+            type="file"
+            id="image"
+            name="image"
+            accept="image/*"
+            className="form-control"
+            onChange={(e) => setImage(e.target.files[0])}
+          />
+        </div>
+        <div className="btn-div">
+          <button type="submit" className="btn btn-primary">Post</button>
+        </div>
+      </form>
+    </section>
   );
-};
+}
 
-export default CommunityFeed;
+function Community() {
+  // Implement logic to fetch and display community posts here
+  return (
+    <section className="container md-6">
+      <div id="communityFeed" className="community-feed"></div>
+    </section>
+  );
+}
 
+function Footer() {
+  return (
+    <footer className="text-center mt-5" style={{ color: 'white' }}>
+      <p>&copy; 2024 Farmers Community</p>
+    </footer>
+  );
+}
 
-
-
-/*import React, { useEffect, useState } from 'react';
-import { database, ref, onValue, off } from './firebaseConfig';
-import Post from './Post';
-
-const CommunityFeed = ({ showFlashMessage }) => {
-  const [posts, setPosts] = useState([]);
-
-  useEffect(() => {
-    const postsRef = ref(database, 'posts');
-    
-    const unsubscribe = onValue(postsRef, (snapshot) => {
-      const data = snapshot.val();
-      if (data) {
-        const postsArray = Object.keys(data).map((key) => ({
-          postId: key,
-          ...data[key],
-        }));
-        setPosts(postsArray.reverse());
-      } else {
-        setPosts([]);
-      }
-    });
-
-    // Cleanup the listener on component unmount
-    return () => {
-      unsubscribe();
-    };
-  }, []); // Empty dependency array means this effect runs once on mount and cleanup on unmount
-
+function CommunityFeed() {
   return (
     <div>
-      {posts.map((post) => (
-        <Post key={post.postId} post={post} showFlashMessage={showFlashMessage} />
-      ))}
+    <Nav1/>
+      <AddPostForm />
+      <Community />
+   
+      <Footer />
     </div>
   );
-};
+}
 
 export default CommunityFeed;
-
-*/
-
-
-
-
-
