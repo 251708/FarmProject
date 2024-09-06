@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './community.css';
 import Nav1 from './Nav1';
-import 'bootstrap/dist/css/bootstrap.min.css';
+//import 'bootstrap/dist/css/bootstrap.min.css';
 function AddPostForm() {
   const [username, setUsername] = useState('');
   const [content, setContent] = useState('');
